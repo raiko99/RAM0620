@@ -57,3 +57,7 @@ limbu = Chinese()  # limbu on objekt klassist Chinese
 
 intro(timbu)
 intro(limbu)
+
+# instance (self) meetodid on parimad objektidega opereerimiseks
+# static meetodid funktsioonide jaoks, mis ei vaja klasside andmetele ligipääsu
+# class meetodid @classmethod / (cls) klassitasandi andmete jaoks või kui on vaja ligipääsu klassile endale
