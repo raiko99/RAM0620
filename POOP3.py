@@ -7,8 +7,8 @@ class Person:
         Person.add_person()
 
     @classmethod  # muudab klassi ennast, ei pääse ligi objektidele
-    def number_of_people_(cls):
-        return cls.number_of_people
+    def number_of_people_(cls):  # atribuudiks läheb cls nagu class. näiteks klassi muutuja number_of_people muutmiseks
+        return cls.number_of_people  # klassi muutujale ligipääsuks kasutan cls.
 
     @classmethod
     def add_person(cls):
@@ -20,7 +20,8 @@ p2 = Person("Mall")
 print(Person.number_of_people)
 print(p1.number_of_people)
 Person.number_of_people = 8
-print(p2.number_of_people)  # prindib 8. p2 on klassi objekt, kuid objektil pole atribuuti number.., seega muudab klassi atribuuti
+print(p2.number_of_people)  # prindib 8. p2 on klassi objekt, kuid objektil pole atribuuti number.., seega muudab
+# klassi atribuuti
 print(Person.number_of_people_())
 
 class Math:

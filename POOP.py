@@ -1,6 +1,6 @@
 class Dog:
     def __init__(self,name,age):  #spetsiaalne meetod. uue objekti loomisel kutsutakse kohe välja init meetodis defineeritud paramaeetritega
-        self.name = name
+        self.name = name  # self viitab objektile, mis seda meetodit kasutab
         self.age = age#atribuut nimega name
         #print(name)
 
@@ -62,4 +62,5 @@ print(course.get_average_grade())
 """
 klassi __init__ meetod kutsutakse välja kohe kui klassi abil luuakse uus objekt
 klassi sees võin luua atribuute, mida ei ole __init__ meetodis
+self viitab objektile, mis seda meetodit kasutab
 """
